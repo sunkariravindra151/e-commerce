@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d63b211e4f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section id="s1">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="check-btn"><i class="fas fa-bars"></i></label>
+            <label class="logo">E-shop</label>
+            <ul>
+                <li class="active"><a id="c1" class="c1" href="index.html">Home</a></li>
+                <li class="active" id="Categories">
+                    <a class="c1" class="dropbtn">Shop</a>
+                    <div class="dropdown-content">
+                        <br>
+                        <br>
+                        <a class="cat" href="shop.html">Category1</a>
+                        <br><br>
+                        <a class="cat" href="shop2.html">Category2</a>
+                        <br><br>
+                    </div>
+                </li>
+                <li class="active"><a class="c1" href="#">Sign Up</a></li>
+                <li class="active"><a class="c1" href="#">Login</a></li>
+                <button class="opencart" onclick="open_cart()"><i class="fa-solid fa-cart-plus"></i>Cart</button>
+            </ul>
+            <div id="my-cart">
+                <button class="close_cart" onclick="close_cart()"><i class="fa-regular fa-circle-xmark"></i></button>
+                <h2>Your Shopping Cart</h2>
+                <table id="table-data">
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Remove</th>
+                        <th>Price</th>
+                    </tr>
+                </table>
+                <hr>
+                <div>
+                    <p id="total-price">Total : 0</p>
+                    <button class="checkout">checkout</button>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="s7">
+        <h2>#stayhome</h2>
+        <p>Save more with coupons & up to 70% off!</p>
+    </section>
+    <section class="s4">
+        <div class="item">
+            <div class="item-container"onclick="window.location.href='product5.html';">
+                    <img src="https://m.media-amazon.com/images/I/61QdJte9ZFL._SX679._SX._UX._SY._UY_.jpg" class="item-img6"alt="">
+                <div class="item-content">
+                    <h5>addidas</h5>
+                    <h4>Cartoon Astronout Top</h4>
+                    <div class="i">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    </div>
+                    <div class="item-shop">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3><i class="fa fa-inr" aria-hidden="true"></i>2000</h3>
+                </div>
+            </div>
+            <div class="item-container"onclick="window.location.href='product5.html';">
+                <img src="https://m.media-amazon.com/images/I/71+Fin1FYjL._UX679_.jpg" class="item-img6"alt="">
+            <div class="item-content">
+                <h5>addidas</h5>
+                <h4>Cartoon Astronout Top</h4>
+                <div class="i">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                </div>
+                <div class="item-shop"onclick="window.location.href='product5.html';">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3><i class="fa fa-inr" aria-hidden="true"></i>2000</h3>
+            </div>
+            </div>
+        <div class="item-container"onclick="window.location.href='product5.html';">
+                <img src="https://m.media-amazon.com/images/I/71tJypKhqwL._SY741._SX._UX._SY._UY_.jpg" class="item-img6">
+            <div class="item-content">
+                <h5>addidas</h5>
+                <h4>Cartoon Astronout Top</h4>
+                <div class="i">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="item-shop">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3><i class="fa fa-inr" aria-hidden="true"></i>2000</h3>
+            </div>
+        </div>
+        <div class="item-container"onclick="window.location.href='product5.html';">
+            <img src="https://m.media-amazon.com/images/I/61x8xI4j+GL._SY741._SX._UX._SY._UY_.jpg"  class="item-img6"alt="">
+        <div class="item-content">
+            <h5>addidas</h5>
+            <h4>Cartoon Astronout Top</h4>
+            <div class="i">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+             </div>
+            <div class="item-shop">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3><i class="fa fa-inr" aria-hidden="true"></i>2000</h3>
+        </div>
+    </div>
+    <div class="item-container"onclick="window.location.href='product6.html';">
+        <img  class="pant" src="https://m.media-amazon.com/images/I/31J1-HkY4fL._AC_SR160,200_.jpg" alt="">
+    <div class="item-content">
+        <h5>addidas</h5>
+        <h4>Cartoon Astronout Pants</h4>
+        <div class="i">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        </div>
+        <div class="item-shop">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        <h3><i class="fa fa-inr" aria-hidden="true"></i>2000</h3>
+    </div>
+</div>
+<div class="item-container"onclick="window.location.href='product6.html';">
+    <img class="pant" src="https://m.media-amazon.com/images/I/31OlW0ZI5jL._AC_SR160,200_.jpg"  alt="">
+<div class="item-content">
+    <h5>addidas</h5>
+    <h4>Cartoon Astronout  Pants</h4>
+    <div class="i">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    </div>
+    <div class="item-shop">
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+    <h3><i class="fa fa-inr" aria-hidden="true"></i>2000</h3>
+</div>
+</div>
+<div class="item-container"onclick="window.location.href='product6.html';">
+    <img class="pant" src="https://m.media-amazon.com/images/I/31ieGGt40xL._AC_SR160,200_.jpg" alt="">
+<div class="item-content">
+    <h5>addidas</h5>
+    <h4>Cartoon Astronout Pants</h4>
+    <div class="i">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <div class="item-shop">
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+    <h3><i class="fa fa-inr" aria-hidden="true"></i>2000</h3>
+</div>
+</div>
+<div class="item-container"onclick="window.location.href='product6.html';">
+<img class="pant" src="https://m.media-amazon.com/images/I/6105jZOJBjL._UY741_.jpg"alt="">
+<div class="item-content">
+<h5>addidas</h5>
+<h4>Cartoon Astronout Pants</h4>
+<div class="i">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+ </div>
+<div class="item-shop">
+    <i class="fas fa-shopping-cart"></i>
+</div>
+<h3><i class="fa fa-inr" aria-hidden="true"></i>2000</h3>
+</div>
+</div>  
+</section>
+<section id="pagination">
+    <a href="shop.html"><i class="fa fa-arrow-left"></i></a>
+    <a href="shop2.html">2</a>
+</section>
+<section id="newsletter">
+    <div class="newstext">
+        <h4>Sign UP for Updates</h4>
+        <p>Get E-mail updates about our latest shop and special offers.</p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="your email address">
+        <button class="normal">Sign Up</button>
+    </div>
+</section>
+<footer class="section-p1">
+    <div class="col-1">
+        <h2 class="logo">E-shop</h2>
+        <h4>Contact</h4>
+        <p><span><strong>Address:</strong></span> 876 Bholram Road,Street 65,Hyderabad</p>
+         <p><span><strong>Phone:</strong></span> +91 819108769 / +91 01 2345 6789</p>
+         <p><span><strong>Hours:</strong></span>10:00 - 18:00,Mon - Sat</p>
+         <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+         </div>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Help</a>
+    </div>
+    <div class="install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="images/app.jpg" alt="">
+            <img src="images/play.jpg" alt="">
+        </div>
+        <p>Secure Payment Gateways</p>
+        <img src="images/pay.png" alt="">
+    </div>
+    <div class="copyright">
+        <p>@ 2023, E-Shop - HTML CSS JavaScript Ecommerce Website</p>
+    </div>
+</footer>
+<script>
+    var imageitem6 = document.querySelectorAll(".item-img6");
+
+    for (let i = 0; i < imageitem6.length; i++) {
+        imageitem6[i].addEventListener('click', function () {
+            var imageUrl = imageitem6[i].getAttribute("src");
+            sessionStorage.setItem("selectedImage", imageUrl);
+            window.location.href = 'product5.html';
+        });
+    }
+    var imageitem3 = document.querySelectorAll(".pant");
+    for (let i = 0; i < imageitem3.length; i++) {
+        imageitem3[i].addEventListener('click', function () {
+            var imageUrl3 = imageitem3[i].getAttribute("src");
+            sessionStorage.setItem("selectedImage", imageUrl3);
+            window.location.href = 'product6.html';
+        });
+    }
+</script>
+<script src="index.js"></script>
+</body>
+</html>
